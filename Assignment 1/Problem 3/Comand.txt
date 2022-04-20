@@ -1,0 +1,4 @@
+gcc -c all_module.c -o all_module.o
+ar rcs all_module.a all_module.o
+gcc -c main.c -o main.o
+gcc -o main main.o -L. all_module.a 
